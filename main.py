@@ -211,9 +211,7 @@ def create_new_population(population, population_size):
     return new_population
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-
+def main():
     # Initialise algorithm conditions
     population_size = 100
     generation = 1
@@ -227,7 +225,7 @@ if __name__ == '__main__':
 
     # Run the genetic algorithm until there has been no improvement in
     # the population for x iterations
-    while no_improvement <= 100:
+    while no_improvement <= 1000:
 
         # Get the fittest chromosome from the current population and increment
         # the termination condition
@@ -270,3 +268,8 @@ if __name__ == '__main__':
     print(solution.generation)
     print('Solution Fitness: ')
     print(solution.fitness())
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    main()
